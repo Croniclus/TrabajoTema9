@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>    
+</head>
+<body>
+    <!--
+       PDO(PHP Data Objects) es basicamente una capa deabstraccion de bases de datos, basicamente lo que hace es realizar las mismas funciones para todas las bases de datos, podria copiar toda la definicion de google pero prefiero leerlo entenderlo y escribir esto... 
+    -->
+    <!--
+        Ventajas: 
+        Seguridad mejorada
+        Soporte para multiples bases de datos
+        Reutilizacion de codigo
+        Manejo de errores consistente
+        Mejora el rendimientoSoporte para transacciones
+        Facilidad de mantenimiento
+    -->
+<div class="body">
+		<div class="veen">
+			<div class="login-btn splits">
+				<p>Already an user?</p>
+				<button class="active">Login</button>
+			</div>
+			<div class="rgstr-btn splits">
+				<p>Don't have an account?</p>
+				<button class="rgstr-btn button">Register</button>
+			</div>
+			<div class="wrapper">
+				<form id="login" tabindex="500" action="formulario.php" method="post">
+					<h3>Login</h3>
+					<div class="name">
+						<input type="name" name="nombreUsuLogin">
+						<label>Nombre</label>
+					</div>
+					<div class="passwd">
+						<input type="password" name="passwdLogin">
+						<label>Password</label>
+					</div>
+					<div class="submit">
+						<button class="dark" name="login">Login</button>
+					</div>
+				</form>
+				<form id="register" tabindex="502" action="formulario.php" method="post">
+					<h3>Register</h3>
+					<div class="name">
+						<input type="text" name="nombreUsuRegistro">
+						<label>Nombre</label>
+					</div>
+					<div class="apellido">
+						<input type="text" name="apellidoUsuRegistro">
+						<label>Apellidos</label>
+					</div>
+					<div class="edad">
+						<input type="number" name="edadRegistro">
+						<label>Edad</label>
+					</div>
+					<div class="passwd">
+						<input type="password" name="passwdRegistro">
+						<label>Password</label>
+					</div>
+					<div class="submit">
+						<button class="dark" name="register">Register</button>
+					</div>
+				</form>
+			</div>
+		</div>	
+	</div>
+
+
+	<style type="text/css">
+		.site-link{
+      padding: 5px 15px;
+			position: fixed;
+			z-index: 99999;
+			background: #fff;
+			box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+			right: 30px;
+			bottom: 30px;
+			border-radius: 10px;
+		}
+		.site-link img{
+			width: 30px;
+			height: 30px;
+		}
+	</style>
+</body>
+</html>
